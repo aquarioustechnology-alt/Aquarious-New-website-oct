@@ -17,12 +17,6 @@ import TechnologyStackSection from "@/components/homepage/TechnologyStackSection
 import BusinessScaleSection from "@/components/homepage/BusinessScaleSection"
 import CaseStudiesSection from "@/components/homepage/CaseStudiesSection"
 
-export const metadata = {
-  title: "Aquarious Technology - AI-Powered Global Software Solutions Partner",
-  description:
-    "We build intelligent systems that automate, optimize, and scale - trusted by global businesses for secure, AI-driven growth.",
-}
-
 export default function HomePage() {
   return (
     <main className="min-h-screen">
