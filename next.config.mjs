@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
+  
   reactStrictMode: true,
   
   poweredByHeader: false,
@@ -18,6 +20,10 @@ const nextConfig = {
         hostname: '**',
       },
     ],
+  },
+  
+  experimental: {
+    optimizePackageImports: ['lucide-react', '@radix-ui/react-icons'],
   },
 }
 

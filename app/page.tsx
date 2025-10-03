@@ -1,21 +1,23 @@
+import dynamic from "next/dynamic"
 import Header from "@/components/common/Header"
 import StickyIcons from "@/components/common/StickyIcons"
-import HeroSection from "@/components/homepage/HeroSection"
-import GradientSection from "@/components/homepage/GradientSection"
-import MarqueeSection from "@/components/homepage/MarqueeSection"
-import SolutionsSection from "@/components/homepage/SolutionsSection"
-import IndustriesSection from "@/components/homepage/IndustriesSection"
-import AboutSection from "@/components/homepage/AboutSection"
-import PartnersSection from "@/components/homepage/PartnersSection"
-import TestimonialsSection from "@/components/homepage/TestimonialsSection"
-import CraftedSolutionsSection from "@/components/homepage/CraftedSolutionsSection"
-import CTASection from "@/components/homepage/CTASection"
-import AIServicesSection from "@/components/homepage/AIServicesSection"
-import StatisticsSection from "@/components/homepage/StatisticsSection"
-import OverlappingScrollSection from "@/components/homepage/OverlappingScrollSection"
-import TechnologyStackSection from "@/components/homepage/TechnologyStackSection"
-import BusinessScaleSection from "@/components/homepage/BusinessScaleSection"
-import CaseStudiesSection from "@/components/homepage/CaseStudiesSection"
+
+const HeroSection = dynamic(() => import("@/components/homepage/HeroSection"), { ssr: true })
+const GradientSection = dynamic(() => import("@/components/homepage/GradientSection"), { ssr: true })
+const MarqueeSection = dynamic(() => import("@/components/homepage/MarqueeSection"), { ssr: true })
+const SolutionsSection = dynamic(() => import("@/components/homepage/SolutionsSection"), { ssr: true })
+const IndustriesSection = dynamic(() => import("@/components/homepage/IndustriesSection"), { ssr: true })
+const AboutSection = dynamic(() => import("@/components/homepage/AboutSection"), { ssr: true })
+const PartnersSection = dynamic(() => import("@/components/homepage/PartnersSection"), { ssr: true })
+const TestimonialsSection = dynamic(() => import("@/components/homepage/TestimonialsSection"), { ssr: true })
+const CraftedSolutionsSection = dynamic(() => import("@/components/homepage/CraftedSolutionsSection"), { ssr: true })
+const CTASection = dynamic(() => import("@/components/homepage/CTASection"), { ssr: true })
+const AIServicesSection = dynamic(() => import("@/components/homepage/AIServicesSection"), { ssr: true })
+const StatisticsSection = dynamic(() => import("@/components/homepage/StatisticsSection"), { ssr: true })
+const OverlappingScrollSection = dynamic(() => import("@/components/homepage/OverlappingScrollSection"), { ssr: true })
+const TechnologyStackSection = dynamic(() => import("@/components/homepage/TechnologyStackSection"), { ssr: true })
+const BusinessScaleSection = dynamic(() => import("@/components/homepage/BusinessScaleSection"), { ssr: true })
+const CaseStudiesSection = dynamic(() => import("@/components/homepage/CaseStudiesSection"), { ssr: true })
 
 export default function HomePage() {
   return (

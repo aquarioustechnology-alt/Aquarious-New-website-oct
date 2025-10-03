@@ -4,6 +4,8 @@ import { useEffect } from "react"
 
 export default function ScrollAnimations() {
   useEffect(() => {
+    if (typeof window === "undefined") return
+
     const observerOptions = {
       threshold: 0.1,
       rootMargin: "0px 0px -50px 0px",
